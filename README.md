@@ -33,8 +33,8 @@
 
 | Dataset | link |
 | ------ | ------ |
-| Air quality data | [http://archive.ics.uci.edu/ml/index.php] [PlDb] |
-| Clinical data | [http://archive.ics.uci.edu/ml/index.php] [PlDb] |
+| Air quality data | http://archive.ics.uci.edu/ml/index.php|
+| Clinical data | http://archive.ics.uci.edu/ml/index.php|
 
 
 

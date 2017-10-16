@@ -10,7 +10,7 @@
   - Presentation DDL: 28 Nov (Tue) 3pm-7:30pm	
   - PPT/Source Code Submission DDL: 28 Nov (Tue) 23:59pm
 
-### Allocation of work
+### Plan
 #### Milestone 1 (Deadline: Oct 29)
   - PIC: James, Guo
   - Read TICC Source Code
@@ -27,7 +27,7 @@
    - Prepare PPT
    - Submit code
 
-### Datasets source
+### Others
 * [UCI Repository] -  UC Irvine Machine Learning Repository
 * To be added:
 

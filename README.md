@@ -7,7 +7,7 @@
   - Milestone 1 DDL: Oct 29
   - Milestone 2 DDL: Nov 10
   - Final Report DDL: 16 Nov 15:00 (in class)
-  - Presentation DDL: 28 Nov (Tue) 3pm-7:30pm	
+  - Presentation DDL: 21 Nov (Tue) 3pm-4:20pm	
   - PPT/Source Code Submission DDL: 28 Nov (Tue) 23:59pm
 
 ### Plan
@@ -19,10 +19,10 @@
 #### Milestone 2 (Deadline: Nov 10)
   - PIC: Ding, Guo
   - Generalization of TICC using the exponential Markov random field (MRF)
-#### Final Report  (Deadline: Nov 16)
+#### Final Report  (Deadline: Nov 17)
   - PIC: James, Ding
   - Final report writing
-#### Final Presentation + Code submission (Deadline: Nov 28)
+#### Final Presentation + Code submission (Deadline: Nov 21)
    - PIC: Guo, Ding
    - Prepare PPT
    - Submit code

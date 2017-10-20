@@ -1,5 +1,5 @@
 from cvxpy import *
-import numpy as np 
+import numpy as np
 import time, collections, os, errno, sys
 import matplotlib
 matplotlib.use('Agg')
@@ -17,14 +17,14 @@ import pandas as pd
 pd.set_option('display.max_columns', 500)
 np.set_printoptions(formatter={'float': lambda x: "{0:0.4f}".format(x)})
 np.random.seed(102)
-#####################PARAMETERS TO PLAY WITH 
+#####################PARAMETERS TO PLAY WITH
 window_size = 10
 maxIters = 100 ##number of Iterations of the smoothening + clustering algo
 beta = 5 ## Beta parameter
 lambda_parameter = 11e-2 ## Lambda regularization parameter
 number_of_clusters = 2
 threshold = 2e-5##Threshold for plots. Not used in TICC algorithm.
-write_out_file = False ##Only if True are any files outputted
+write_out_file = True ##Only if True are any files outputted
 seg_len = 300##segment-length : used in confusion matrix computation
 
 ##INPUT file location
@@ -43,7 +43,7 @@ num_blocks = window_size + 1
 switch_penalty = beta## smoothness penalty
 lam_sparse = lambda_parameter##sparsity parameter
 maxClusters = number_of_clusters+1## Number of clusters + 1
-write_out_file = False ##Only if True are any files outputted
+write_out_file = True ##Only if True are any files outputted
 num_stacked = num_blocks - 1
 ##colors used in hexadecimal format
 hexadecimal_color_list = ["cc0000","0000ff","003300","33ff00","00ffcc","ffff00","ff9900","ff00ff","cccc66","666666","ffccff","660000","00ff00","ffffff","3399ff","006666","330000","ff0000","cc99ff","b0800f","3bd9eb","ef3e1b"]
@@ -71,12 +71,12 @@ size_blocks = n
 def upper2Full(a, eps = 0):
     ind = (a<eps)&(a>-eps)
     a[ind] = 0
-    n = int((-1  + np.sqrt(1+ 8*a.shape[0]))/2)  
+    n = int((-1  + np.sqrt(1+ 8*a.shape[0]))/2)
     A = np.zeros([n,n])
-    A[np.triu_indices(n)] = a 
+    A[np.triu_indices(n)] = a
     temp = A.diagonal()
-    A = np.asarray((A + A.T) - np.diag(temp))             
-    return A   
+    A = np.asarray((A + A.T) - np.diag(temp))
+    return A
 
 
 def updateClusters(LLE_node_vals,switch_penalty = 1):
@@ -204,7 +204,7 @@ def compute_confusion_matrix(num_clusters,clustered_points_algo, sorted_indices_
 		# num = (int(sorted_indices_algo[point]/seg_len) %2)
 		# true_confusion_matrix[num,cluster] += 1
 
-		##CASE C: 
+		##CASE C:
 		# num = (sorted_indices_algo[point]/seg_len)
 		# if num < 15:
 		# 	true_confusion_matrix[0,cluster] += 1
@@ -213,7 +213,7 @@ def compute_confusion_matrix(num_clusters,clustered_points_algo, sorted_indices_
 		# else:
 		# 	true_confusion_matrix[0,cluster] += 1
 
-		##CASE B : 
+		##CASE B :
 		# if num > 4:
 		# 	num = 9 - num
 		# true_confusion_matrix[num,cluster] += 1
@@ -264,7 +264,7 @@ def computeNetworkAccuracy(matching,train_cluster_inverse, num_clusters):
 	for cluster in xrange(num_clusters):
 		true_cluster_cov = np.loadtxt("Inverse Covariance cluster ="+ str(cluster) +".csv", delimiter = ",")
 		matched_cluster = matching[cluster]
-		matched_cluster_cov = train_cluster_inverse[matched_cluster] 
+		matched_cluster_cov = train_cluster_inverse[matched_cluster]
 		(nrow,ncol) = true_cluster_cov.shape
 
 		out_true = np.zeros([nrow,ncol])
@@ -326,7 +326,7 @@ for iters in xrange(maxIters):
 	num_clusters = maxClusters - 1
 
 	if iters == 0:
-		## Now splitting up stuff 
+		## Now splitting up stuff
 		## split1 : Training and Test
 		## split2 : Training and Test - different clusters
 		training_percent = 0.90
@@ -371,13 +371,13 @@ for iters in xrange(maxIters):
 					idx_k = sorted_training_idx[i+k]
 					complete_D_train[i][k*n:(k+1)*n] =  Data[idx_k][0:n]
 		# np.savetxt("Data_train_rand_seed="+str(0)+".csv", complete_D_train,delimiter=",")
-		##Stack the test  
+		##Stack the test
 		complete_D_test = np.zeros([len(test_idx), num_stacked*n])
 		len_test = len(test_idx)
 
 		for i in xrange(len(sorted_test_idx)):
 			idx = sorted_test_idx[i]
-			idx_left = idx -1 
+			idx_left = idx -1
 			while idx_left not in sorted_training_idx:
 				idx_left -= 1
 			point_tr = sorted_training_idx.index(idx_left)
@@ -414,17 +414,17 @@ for iters in xrange(maxIters):
 		cluster = clustered_points[point]
 		train_clusters[cluster].append(point)
 		len_train_clusters[cluster] += 1
-		counter +=1 
+		counter +=1
 
 	for point in range(len(clustered_points_test)):
 		cluster = clustered_points_test[point]
 		test_clusters[cluster].append(point)
 		len_test_clusters[cluster] += 1
-		counter +=1 
+		counter +=1
 
 
 
-	##train_clusters holds the indices in complete_D_train 
+	##train_clusters holds the indices in complete_D_train
 	##for each of the clusters
 	for cluster in xrange(num_clusters):
 		if len_train_clusters[cluster] != 0:
@@ -443,7 +443,7 @@ for iters in xrange(maxIters):
 				point = indices_test[i]
 				D_test[i,:] = complete_D_test[point,:]
 			print "stacking Cluster #", cluster,"DONE!!!"
-			##Fit a model - OPTIMIZATION	
+			##Fit a model - OPTIMIZATION
 			size_blocks = n
 			probSize = num_stacked * size_blocks
 			lamb = np.zeros((probSize,probSize)) + lam_sparse
@@ -458,7 +458,7 @@ for iters in xrange(maxIters):
 			gvx.AddNode(1)
 			dummy = Variable(1)
 			gvx.AddEdge(0,1, Objective = lamb*dummy + num_stacked*dummy + size_blocks*dummy)
-			
+
 			##solve using customized ADMM solver
 			gvx.Solve(Verbose=False, MaxIters=1000, Rho = 1, EpsAbs = 1e-6, EpsRel = 1e-6)
 			print "\ncompleted solving the optimization problem for the cluster"
@@ -488,7 +488,7 @@ for iters in xrange(maxIters):
 			cluster_norms[cluster] = (np.linalg.norm(old_computed_covariance[num_clusters,cluster]),cluster)
 		sorted_cluster_norms = sorted(cluster_norms,reverse = True)
 
-	##Add a point to the empty clusters 
+	##Add a point to the empty clusters
 	##Assumption more non empty clusters than empty ones
 	counter = 0
 	for cluster in xrange(num_clusters):
@@ -520,7 +520,7 @@ for iters in xrange(maxIters):
 
 
 	##Code -----------------------SMOOTHENING
-	##For each point compute the LLE 
+	##For each point compute the LLE
 	print "beginning with the DP - smoothening ALGORITHM"
 
 	LLE_all_points_clusters = np.zeros([len(clustered_points),num_clusters])
@@ -529,8 +529,8 @@ for iters in xrange(maxIters):
 		if point + num_stacked-1 < complete_D_train.shape[0]:
 			for cluster in xrange(num_clusters):
 				# print "\nCLuster#", cluster
-				cluster_mean = cluster_mean_info[num_clusters,cluster] 
-				cluster_mean_stacked = cluster_mean_stacked_info[num_clusters,cluster] 
+				cluster_mean = cluster_mean_info[num_clusters,cluster]
+				cluster_mean_stacked = cluster_mean_stacked_info[num_clusters,cluster]
 
 				x = complete_D_train[point,:] - cluster_mean_stacked[0:(num_blocks-1)*n]
 				cov_matrix = computed_covariance[num_clusters,cluster][0:(num_blocks-1)*n,0:(num_blocks-1)*n]
@@ -538,7 +538,7 @@ for iters in xrange(maxIters):
 				log_det_cov = np.log(np.linalg.det(cov_matrix))# log(det(sigma2|1))
 				lle = np.dot(   x.reshape([1,(num_blocks-1)*n]), np.dot(inv_cov_matrix,x.reshape([n*(num_blocks-1),1]))  ) + log_det_cov
 				LLE_all_points_clusters[point,cluster] = lle
-	
+
 	##Update cluster points - using dynamic programming smoothening
 	clustered_points = updateClusters(LLE_all_points_clusters,switch_penalty = switch_penalty)
 	print "\ncompleted smoothening algorithm"
@@ -577,7 +577,7 @@ for iters in xrange(maxIters):
 		idx1 = idx + 1
 		while (idx1 not in sorted_training_idx and idx1 < m):
 			idx1 += 1
-		idx2 = idx -1 
+		idx2 = idx -1
 		while (idx2 not in sorted_training_idx and idx2 > -1):
 			idx2 -= 1
 		if idx1 == m or idx2 == -1:
@@ -592,11 +592,11 @@ for iters in xrange(maxIters):
 		left_clust = clustered_points[sorted_training_idx.index(idx2)]
 		point_tr = sorted_training_idx.index(idx2)
 		data_tt = complete_D_train[point_tr,:]
-		data_tt[0:n] = Data[idx,:]#complete_D_test[point,0:num_stacked] 
+		data_tt[0:n] = Data[idx,:]#complete_D_test[point,0:num_stacked]
 
 		for cluster in xrange(num_clusters):
-			cluster_mean = cluster_mean_info[num_clusters,cluster] 
-			cluster_mean_stacked = cluster_mean_stacked_info[num_clusters,cluster] 
+			cluster_mean = cluster_mean_info[num_clusters,cluster]
+			cluster_mean_stacked = cluster_mean_stacked_info[num_clusters,cluster]
 
 			x = data_tt - cluster_mean_stacked[0:(num_blocks-1)*n]
 			cov_matrix = computed_covariance[num_clusters,cluster][0:(num_blocks-1)*n,0:(num_blocks-1)*n]
@@ -623,7 +623,7 @@ for iters in xrange(maxIters):
 		idx1 = idx + 1
 		while (idx1 not in sorted_training_idx and idx1 < m):
 			idx1 += 1
-		idx2 = idx -1 
+		idx2 = idx -1
 		while (idx2 not in sorted_training_idx and idx2 > -1):
 			idx2 -= 1
 		if idx1 == m or idx2 == -1:
@@ -639,10 +639,10 @@ for iters in xrange(maxIters):
 		left_clust = gmm_clustered_pts[sorted_training_idx.index(idx2)]
 		point_tr = sorted_training_idx.index(idx2)
 		data_tt = complete_D_train[point_tr,:]
-		data_tt[0:n] = Data[idx,:]#complete_D_test[point,0:num_stacked] 
+		data_tt[0:n] = Data[idx,:]#complete_D_test[point,0:num_stacked]
 
 		for cluster in xrange(num_clusters):
-			cluster_mean_stacked = gmm_means[cluster] 
+			cluster_mean_stacked = gmm_means[cluster]
 
 			x = data_tt - cluster_mean_stacked[0:(num_blocks-1)*n]
 			cov_matrix = gmm_covariances[cluster][0:(num_blocks-1)*n,0:(num_blocks-1)*n]
@@ -821,6 +821,9 @@ for iters in xrange(maxIters):
 		break
 	old_clustered_points = clustered_points
 
+if write_out_file == True:
+    np.savetxt(prefix_string + "assignment_results.csv", clustered_points , delimiter = ",", fmt = "%1.6f")
+
 ##Training confusion matrix
 train_confusion_matrix_EM = compute_confusion_matrix(num_clusters,clustered_points,sorted_training_idx)
 train_confusion_matrix_GMM = compute_confusion_matrix(num_clusters,gmm_clustered_pts,sorted_training_idx)
@@ -866,11 +869,3 @@ print "\n\n\n"
 # print "switch_penalty", switch_penalty
 # print "num_cluster", maxClusters - 1
 # print "num stacked", num_stacked
-
-
-
-
-
-
-
-

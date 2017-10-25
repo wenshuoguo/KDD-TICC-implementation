@@ -33,7 +33,7 @@
 
 | Dataset | link |
 | ------ | ------ |
-| Air quality data | http://archive.ics.uci.edu/ml/index.php|
+| Air quality data | https://archive.ics.uci.edu/ml/datasets/Beijing+PM2.5+Data|
 | Clinical data | http://archive.ics.uci.edu/ml/index.php|
 
 

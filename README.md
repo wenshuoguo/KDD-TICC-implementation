@@ -11,12 +11,12 @@
   - PPT/Source Code Submission DDL: 21 Nov (Tue) 23:59pm
 
 ### Plan
-#### Milestone 1 (Deadline: Oct 29)
+#### Milestone 1 (Deadline: Nov 3)
   - PIC: James, Guo
   - Read TICC Source Code
   - Implement TICC on air quality data
   - Implement TICC on clinical data
-#### Milestone 2 (Deadline: Nov 10)
+#### Milestone 2 (Deadline: Nov 12)
   - PIC: Ding, Guo
   - Generalization of TICC using the exponential Markov random field (MRF)
 #### Final Report  (Deadline: Nov 16)

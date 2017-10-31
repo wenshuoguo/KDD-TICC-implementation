@@ -4,8 +4,8 @@
 
 ### Important Dates
 
-  - Milestone 1 DDL: Oct 29
-  - Milestone 2 DDL: Nov 10
+  - Milestone 1 DDL: Nov 3
+  - Milestone 2 DDL: Nov 12
   - Final Report DDL: 16 Nov 15:00 (in class)
   - Presentation DDL: 21 Nov (Tue) 3pm-4:20pm	
   - PPT/Source Code Submission DDL: 21 Nov (Tue) 23:59pm

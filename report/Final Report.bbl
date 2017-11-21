@@ -1,0 +1,66 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+
+\bibitem{DBLP:journals/is/AghabozorgiST15}
+Aghabozorgi, S.R., Shirkhorshidi, A.S., Teh, Y.W.: Time-series clustering - {A}
+  decade review. Inf. Syst.  53,  16--38 (2015),
+  \url{https://doi.org/10.1016/j.is.2015.04.007}
+
+\bibitem{DEMETRIADES1996387}
+Demetriades, P.O., Hussein, K.A.: Does financial development cause economic
+  growth? time-series evidence from 16 countries. Journal of Development
+  Economics  51(2),  387 -- 411 (1996),
+  \url{http://www.sciencedirect.com/science/article/pii/S030438789600421X}
+
+\bibitem{tiic}
+Hallac, D., Vare, S., Boyd, S.P., Leskovec, J.: Toeplitz inverse
+  covariance-based clustering of multivariate time series data. CoRR
+  abs/1706.03161 (2017), \url{http://arxiv.org/abs/1706.03161}
+
+\bibitem{DBLP:journals/pr/Liao05}
+Liao, T.W.: Clustering of time series data - a survey. Pattern Recognition
+  38(11),  1857--1874 (2005),
+  \url{https://doi.org/10.1016/j.patcog.2005.01.025}
+
+\bibitem{Madeo:2013:GUS:2480362.2480373}
+Madeo, R.C.B., Lima, C.A.M., Peres, S.M.: Gesture unit segmentation using
+  support vector machines: Segmenting gestures from rest positions. In:
+  Proceedings of the 28th Annual ACM Symposium on Applied Computing. pp.
+  46--52. SAC '13, ACM, New York, NY, USA (2013),
+  \url{http://doi.acm.org/10.1145/2480362.2480373}
+
+\bibitem{DBLP:conf/mue/NiennattrakulR07}
+Niennattrakul, V., Ratanamahatana, C.A.: On clustering multimedia time series
+  data using k-means and dynamic time warping. In: 2007 International
+  Conference on Multimedia and Ubiquitous Engineering {(MUE} 2007), 26-28 April
+  2007, Seoul, Korea. pp. 733--738 (2007),
+  \url{https://doi.org/10.1109/MUE.2007.165}
+
+\bibitem{Stisen:2015:SDD:2809695.2809718}
+Stisen, A., Blunck, H., Bhattacharya, S., Prentow, T.S., Kj{\ae}rgaard, M.B.,
+  Dey, A., Sonne, T., Jensen, M.M.: Smart devices are different: Assessing and
+  mitigatingmobile sensing heterogeneities for activity recognition. In:
+  Proceedings of the 13th ACM Conference on Embedded Networked Sensor Systems.
+  pp. 127--140. SenSys '15, ACM, New York, NY, USA (2015),
+  \url{http://doi.acm.org/10.1145/2809695.2809718}
+
+\bibitem{DBLP:conf/smc/TsujinoO10}
+Tsujino, J., Oyama{-}Higa, M.: A time series change of biological information
+  through chaos analysis in finger pulse waves after taking medicine with
+  circulatory disease. In: Proceedings of the {IEEE} International Conference
+  on Systems, Man and Cybernetics, Istanbul, Turkey, 10-13 October 2010. pp.
+  1519--1523 (2010), \url{https://doi.org/10.1109/ICSMC.2010.5642324}
+
+\bibitem{DBLP:journals/bmcbi/WangJLZWWHZJXW17}
+Wang, Z., Jin, S., Liu, G., Zhang, X., Wang, N., Wu, D., Hu, Y., Zhang, C.,
+  Jiang, Q., Xu, L., Wang, Y.: Dtwscore: differential expression and cell
+  clustering analysis for time-series single-cell rna-seq data. {BMC}
+  Bioinformatics  18(1),  270:1--270:14 (2017),
+  \url{https://doi.org/10.1186/s12859-017-1647-3}
+
+\bibitem{xiong2004time}
+Xiong, Y., Yeung, D.Y.: Time series clustering with arma mixtures. Pattern
+  Recognition  37(8),  1675--1689 (2004)
+
+\end{thebibliography}

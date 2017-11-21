@@ -1,0 +1,155 @@
+% This is LLNCS.DEM the demonstration file of
+% the LaTeX macro package from Springer-Verlag
+% for Lecture Notes in Computer Science,
+%
+\documentclass{llncs}
+%
+\usepackage{makeidx}  % allows for indexgeneration
+\usepackage{float}
+%
+\begin{document}
+%
+\frontmatter          % for the preliminaries
+%
+\pagestyle{headings}  % switches on printing of running heads
+
+\title{COMP5331 Proposal: \\ Applications and Improvements of Toeplitz Inverse Covariance-Based Clustering}
+\author{{\bf Group 13}: Guo Wenshuo, Cheung Tsz Him and Ding Mu Cong (John)  (Research Type Project)}
+
+\institute{the Hong Kong University of Science and Technology}
+
+\maketitle % typeset the title of the contribution
+
+\begin{abstract}
+
+Discovering repeated patterns in temporal data is useful to provide effective information. These patterns could simplify the original complicated data-sets into a temporal sequence of only a small number of states, or clusters, and therefore provide better understanding of the data. However, there is a current challenge on simultaneous segmentation and clustering of the time series. Besides, it has been a difficulty to interpret the resulting clusters, especially when the data is high-dimensional. In this proposal, we planed to implement the novel method developed by David Hallac et al \cite{tiic} which is the Toeplitz Inverse Covariance-Based Clustering (TICC) of Time Series Data on a variety of real-world multivariate datasets, including the air pollution data and clinical monitoring records. We also proposed to extend the current model by exponential Markov random field (MRF) in order to learn the dependencies in heterogeneous datasets. To the best of our knowledge, we hope that our work could bring benefits on the generalization and further application of the TICC model. 
+
+\end{abstract}
+
+\section{Introduction and Background}
+
+In recent years, there has been an explosion of interest in mining time series databases. Time series clustering has shown its significance in providing effective information and useful applications in many areas, including economics \cite{DEMETRIADES1996387},medicine \cite{DBLP:conf/smc/TsujinoO10},bio-informatics\cite{DBLP:journals/bmcbi/WangJLZWWHZJXW17}and multimedia\cite{DBLP:conf/mue/NiennattrakulR07}. The goal of clustering is to distinguish structures in an unlabeled data set by objectively organizing data into homogeneous groups where the within-group-object similarity is minimized and the between-group-object dissimilarity is maximized\cite{DBLP:journals/pr/Liao05}. A variety of algorithms have been designed and investigated for clustering of different types of time series data, including hierarchical clustering, partitioning clustering, model-based clustering, density-based clustering, grid-based clustering and multi-step clustering. Although different researches have been conducted on time-series clustering, the unique characteristics of time series data are barriers that fail most of conventional clustering algorithms. In particular, the high dimensionality, very high feature correlation, and large amount of noise that characterize time-series data have been regarded as an interesting research challenge\cite{DBLP:journals/is/AghabozorgiST15}.
+
+Although appearing under different names and implementation details, most time series segmentation algorithms could be grouped into one of the following three categories. The Sliding-windows segmentation, where a segment is grown until it exceeds some error bound and the process repeats with the next data point not included in the newly approximated segment; the Top-down approach where the time series is recursively partitioned until some stopping criteria is met; and the Bottom-up approach where segments are merged starting from the finest possible approximation until some stopping criteria is met.\cite{segTS}.
+
+In most cases, the data is multivariate. These long time series could often be broken down into a sequence of states, each defined by a simple “pattern”, where the states can reoccur many times\cite{tiic}. To achieve this representation, it is necessary to segment and cluster the multi-variate time series simultaneously. 
+
+
+\section{Literature Review}
+
+As summarized in the introduction and background section, the challenge we are facing is to achieve simultaneous segmentation and clustering of time series data. This problem is more difficult than each of these two sub-tasks, since when doing them simultaneously, new difficulties will emerge:
+\begin{itemize}
+\item Difficulty in segmentation:  multiple segments can belong to the same cluster
+\item Difficulty in clustering: data points cannot be clustered independently
+\end{itemize}
+Moreover, the distance-based clustering methods yield unreliable results in many situations and difficulties on interpretation of the clustering. To overcome the difficulties, a model-based approach should be used, similar to clustering based on autoregressive moving average (ARMA) \cite{xiong2004time}, Gaussian
+Mixture \cite{fraley2006mclust}, or hidden Markov models (HMM) \cite{smyth1997clustering}.
+
+The paper "Toeplitz Inverse Covariance-Based Clustering of Multivariate Time Series Data" \cite{tiic} which was newly published in NIPS, 2017 in August proposed a novel method to tackle the sub-sequence clustering problem. They proposed a new model-based clustering method, where each cluster is defined by a correlation network called Markov random field (MRF). Markov random fields are capable to learn and characterize the interdependences between different observations (variables belong to different dimensions) in the sub-sequences of that cluster. They called this model-based clustering method as the Toeplitz Inverse Covariance-based Clustering (TICC). To the best of our knowledge, their paper is the first work to perform time series clustering based on the graphical dependency structure. This provides interpretability to the clusters, prevents overfitting, and, possibly allows us to discover latent patterns that are originally hard to find.
+
+\section{Objectives and Methodology}
+For the proposed project, there are two following main objectives:
+\begin{itemize}
+\item Implementation of the Toeplitz Inverse Covariance-Based Clustering (TICC) method on other types of time series datasets.
+\item Extension of work on exponential Markov random field (MRF) to learn the dependencies in heterogeneous datasets (such as Boolean or categorical readings).
+\end{itemize}In the following two paragraphs, we explain these two tasks in detail.
+
+It is an interesting question whether the TICC model can reveal some unknown patterns in some complex multivariate time-series. In the previous sections, we have seen the power of TICC in identifying latent patterns that could not be found by other approaches. In the paper \cite{tiic}, the TICC solver successfully identified the five driving states of an automobile given the time-series produced by seven sensors. Therefore we expect that this approach could be used on some other continuous time-series with few latent patterns and dimensions. For instance, we could apply TICC on air quality time series data which includes the concentrations of different types of harmful substances, and also the general weather information like humidity, wind direction, wind speed, and precipitations. We believe these variables are correlated and there exist some fixed patterns. TICC may be capable to identify those patterns and help us understand the mechanism behind the pollution. Another class of time-series data which characterize an object with few states is the clinical monitoring data. More specifically, ICU usually provides a very detailed monitoring of the important indices of a patient, including heart rate, blood pressure and many more. But a patient in coma should not have many internal states. TICC allows us to identify the latent states of a patent in deep coma and understand their mechanism. Furthermore, this helps us to translate the complex clinical records to a sequence of states and make the prediction of patient physical performance easier. As we can see, many interesting time-series can be analyzed by the new TICC approach to reveal the latent patterns.
+
+In the paper \cite{tiic}, the authors also pointed out a possible generalization of their TICC model. That is, to use the exponential Markov random field (MRF) to learn the dependencies in heterogeneous data which includes categorical labels. We should note that, many real-word time-series contain more categorical labels compared to continuous quantities. For example, the click-streams recorded by the massive open online course (MOOC) platform, consist of many categorical data such as the course content a user is viewing, the event type a user triggers. The current TICC model can only run on those "clean" time-series with only continuous variables, but a further generalization to work on categorical time-series is also demanded. We will following the track pointed out at the end of the paper \cite{tiic}, first investigate several papers which make use of this exponential MRF, and then try to modify their algorithms to train exponential MRFs instead of the normal ones. Since this step of generalization may require many advanced mathematical techniques, we are not sure whether we can successfully extend the model in this semester. But it is worth to have a try.
+
+% \subsection{Goals}
+% Our group wishes to achieve the following goals by completing this research project.
+% \begin{enumerate}
+% \item Gain solid knowledge of handling time series data and applying variants of clustering methods to complex problem
+% \item Convert the research theory and methodology to working demo that is scalable and computationally maintainable
+% \end{enumerate}
+
+% \subsection{Outcomes}
+% Based on the goals, we have come up with a list of deliverables.
+% \begin{enumerate}
+% \item A comparison and discussion of the challenges of time series clustering and how the previous literature approach the problem
+% \item A working demo, which is not worse than its original implementation, for the illustrated methodology in \cite{tiic}
+% \item An explanatory modification that improves the performance, which can be but not limited to the accuracy, efficiency and robustness of the model
+% \end{enumerate}
+
+
+\section{Plan}
+
+The proposed project will last for 6 weeks. We plan to implement the Toeplitz Inverse Covariance-Based Clustering method proposed by the paper \cite{tiic} on other types of time series datasets, including the air quality time series data and the clinical monitoring data. We also plan to use exponential Markov random field (MRF) to learn the dependencies in categorical time-series dataset, i.e. the click-streams data from the massive open online course (MOOC) platform. The detail time line is as follow:
+
+\begin{itemize}
+\item Week 1: Study the Toeplitz Inverse Covariance-Based Clustering method
+
+\item Week 2: Implement the TICC solver and compare the results of our implementation and the original implementation
+
+\item Week 4: Implement the proposed clustering method on the air quality time series data and the clinical monitoring data
+\item Week 5: Implement the proposed clustering method on the click-streams data from MOOC platform
+\item Week 6: Write up final report based on the findings from previous weeks and prepare the final presentation
+\end{itemize}
+
+\section{Allocation of Work}
+
+The total workload is divided into eight categories including literature review, re-implementation of the TICC model, comparisons of the results, reading of related work, suggestion of modifications, implementation of modifications, writing reports and the final presentation. They are allocated to each member as shown in the table below. The amount of workload is indicated by the number of the "+" symbols. 
+\begin{table}[]
+\centering
+\begin{tabular}{llll}{\bf Task}
+                              & \bf Guo & \bf John & \bf James \\
+
+Implement TICC Solver         & +++ & +++  & ++    \\
+Compare results with baseline & +  & ++    & +++   \\
+Implement TICC on air quality data   & + & ++  & +++    \\
+Implement TICC on clinical data   & +++ & +  & ++    \\
+Implement TICC on MOOC data      & ++ & +++  & +  \\
+Literature review, report writing                & +++  & +++ & ++     \\
+Presentation                  & ++   & +    & +++
+\end{tabular}
+\end{table}
+
+\section{Information of Members}
+
+Below is the information of each member and the corresponding Final Year Projects (FYP) in the group.
+\\
+
+  Member: GUO Wenshuo
+\begin{itemize}
+\item SID: 20253897
+\item FYP advisor: Prof. Szeto Kwok Yip
+\item FYP topic: Statistical Mechanics 
+\item Justification: My FYP focused on statistical mechanics and related numerical simulations.
+\end{itemize}
+
+ Member: CHEUNG Tsz Him
+\begin{itemize}
+\item SID: 20199455
+\item FYP advisor: Prof. Brian Mak
+\item FYP topic: Zamplify: A Natural Sound Recognizing Engine and Trigger Application
+\item Justification: My FYP focuses on using deep learning approach, e.g. CNN, in reconizing non-speech audio sound, which is different from clustering methods.
+\end{itemize}
+
+ Member: DING Mucong
+\begin{itemize}
+\item SID: 20323458
+\item FYP: N/A
+\end{itemize}
+
+\section{Paper List}
+Some papers are selected for (1) insight for clustering on time series data and (2) better understanding of the TICC model\cite{tiic}:
+
+\begin{itemize}
+\item Papers on background of TICC:
+\cite{DBLP:conf/mue/NiennattrakulR07},\cite{fraley2006mclust}, \cite{xiong2004time}, \cite{smyth1997clustering}, \cite{doi:10.1093/biostatistics/kxm045}, \cite{hallac2016greedy}.
+
+\item  Papers on time series clustering: 
+\cite{DBLP:journals/is/AghabozorgiST15}, \cite{DBLP:journals/pr/Liao05}, \cite{segTS}. 
+\item Papers on applications of time series analysis: \cite{DEMETRIADES1996387},\cite{DBLP:conf/mue/NiennattrakulR07}, \cite{DBLP:conf/smc/TsujinoO10}, \cite{DBLP:journals/bmcbi/WangJLZWWHZJXW17}.
+
+\end{itemize}
+%
+% ---- Bibliography ----
+%
+
+\bibliographystyle{splncs03}
+\bibliography{ref}
+
+\end{document}

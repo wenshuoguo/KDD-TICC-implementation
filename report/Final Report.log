@@ -1,0 +1,772 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2017.9.15)  16 NOV 2017 00:52
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**"Final Report.tex"
+(./Final Report.tex
+LaTeX2e <2017-04-15>
+Babel <3.10> and hyphenation patterns for 84 language(s) loaded.
+(./llncs.cls
+Document Class: llncs 2013/09/27 v2.18 
+ LaTeX document class for Lecture Notes in Computer Science
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
+\c@tracingmulticols=\count87
+\mult@box=\box26
+\multicol@leftmargin=\dimen103
+\c@unbalance=\count88
+\c@collectmore=\count89
+\doublecol@number=\count90
+\multicoltolerance=\count91
+\multicolpretolerance=\count92
+\full@width=\dimen104
+\page@free=\dimen105
+\premulticols=\dimen106
+\postmulticols=\dimen107
+\multicolsep=\skip43
+\multicolbaselineskip=\skip44
+\partial@page=\box27
+\last@line=\box28
+\maxbalancingoverflow=\dimen108
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count93
+\c@finalcolumnbadness=\count94
+\last@try=\dimen109
+\multicolovershoot=\dimen110
+\multicolundershoot=\dimen111
+\mult@nat@firstbox=\box50
+\colbreak@box=\box51
+\mc@col@check@num=\count95
+) (./aliascnt.sty
+Package: aliascnt 2009/09/08 v1.3 Alias counter (HO)
+
+(./remreset.sty))
+\c@chapter=\count96
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 362.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 363.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 364.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 365.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 366.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 367.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 368.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 369.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 370.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 371.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 372.
+\tocchpnum=\dimen112
+\tocsecnum=\dimen113
+\tocsectotal=\dimen114
+\tocsubsecnum=\dimen115
+\tocsubsectotal=\dimen116
+\tocsubsubsecnum=\dimen117
+\tocsubsubsectotal=\dimen118
+\tocparanum=\dimen119
+\tocparatotal=\dimen120
+\tocsubparanum=\dimen121
+\@tempcntc=\count97
+\fnindent=\dimen122
+\c@@inst=\count98
+\c@@auth=\count99
+\c@auco=\count100
+\instindent=\dimen123
+\authrun=\box52
+\authorrunning=\toks14
+\tocauthor=\toks15
+\titrun=\box53
+\titlerunning=\toks16
+\toctitle=\toks17
+\c@theorem=\count101
+\c@case=\count102
+\c@conjecture=\count103
+\c@corollary=\count104
+\c@definition=\count105
+\c@example=\count106
+\c@exercise=\count107
+\c@lemma=\count108
+\c@note=\count109
+\c@problem=\count110
+\c@property=\count111
+\c@proposition=\count112
+\c@question=\count113
+\c@solution=\count114
+\c@remark=\count115
+\headlineindent=\dimen124
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks18
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/13 v1.2b Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2017/06/17 v1.0e Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen125
+\Gin@req@width=\dimen126
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2014/09/29 v1.0m Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count116
+\float@exts=\toks19
+\float@box=\box54
+\@float@everytoks=\toks20
+\@floatcapt=\box55
+)
+(/home/mcding/texmf/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/home/mcding/texmf/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen127
+\captionmargin@=\dimen128
+\captionwidth=\dimen129
+\caption@tempdima=\dimen130
+\caption@indent=\dimen131
+\caption@parindent=\dimen132
+\caption@hangindent=\dimen133
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\small \vskip \abovecap
+tionskip \sbox \@tempboxa {{\bfseries #1.} #2}\ifdim \wd \@tempboxa >\hsize {\b
+fseries #1.} #2\par \else \global \@minipagefalse \hb@xt@ \hsize {\hfil \box \@
+tempboxa \hfil }\fi \vskip \belowcaptionskip .
+\c@ContinuedFloat=\count117
+Package caption Info: float package is loaded.
+) (/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+\c@KVtest=\count118
+\sf@farskip=\skip45
+\sf@captopadj=\dimen134
+\sf@capskip=\skip46
+\sf@nearskip=\skip47
+\c@subfigure=\count119
+\c@subfigure@save=\count120
+\c@lofdepth=\count121
+\c@subtable=\count122
+\c@subtable@save=\count123
+\c@lotdepth=\count124
+\sf@top=\skip48
+\sf@bottom=\skip49
+)
+(./Final Report.aux)
+\openout1 = `"Final Report.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count125
+\scratchdimen=\dimen135
+\scratchbox=\box56
+\nofMPsegments=\count126
+\nofMParguments=\count127
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count128
+\MPscratchDim=\dimen136
+\MPnumerator=\count129
+\makeMPintoPDFobject=\count130
+\everyMPtoPDFconversion=\toks22
+) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 24.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 24.
+
+Overfull \hbox (3.37698pt too wide) in paragraph at lines 38--39
+[]\OT1/cmr/m/n/10 Multivariate time se-ries take up the ma-jor-ity in real-worl
+d time se-ries datasets.
+ []
+
+[1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ú in font cmr10!
+Missing character: There is no ‚ in font cmr10!
+Missing character: There is no Ä in font cmr10!
+Missing character: There is no ù in font cmr10!
+ [3]
+<img/True.png, id=17, 1445.4pt x 361.35pt>
+File: img/True.png Graphic file (type png)
+<use img/True.png>
+Package pdftex.def Info: img/True.png  used on input line 76. on input line 76.
+
+Package pdftex.def Info: Requested size: 170.09244pt x 42.52203pt on input line
+ 76.
+<img/TICC.png, id=19, 1445.4pt x 361.35pt>
+File: img/TICC.png Graphic file (type png)
+<use img/TICC.png>
+Package pdftex.def Info: img/TICC.png  used on input line 77. on input line 77.
+
+Package pdftex.def Info: Requested size: 170.09244pt x 42.52203pt on input line
+ 77.
+<img/KMeans.png, id=20, 1445.4pt x 361.35pt>
+File: img/KMeans.png Graphic file (type png)
+<use img/KMeans.png>
+Package pdftex.def Info: img/KMeans.png  used on input line 78. on input line 7
+8.
+Package pdftex.def Info: Requested size: 170.09244pt x 42.52203pt on input line
+ 78.
+<img/GMM.png, id=21, 1445.4pt x 361.35pt>
+File: img/GMM.png Graphic file (type png)
+<use img/GMM.png>
+Package pdftex.def Info: img/GMM.png  used on input line 79. on input line 79.
+Package pdftex.def Info: Requested size: 170.09244pt x 42.52203pt on input line
+ 79.
+<img/CFM_TICC.png, id=22, 658.46pt x 584.1825pt>
+File: img/CFM_TICC.png Graphic file (type png)
+<use img/CFM_TICC.png>
+Package pdftex.def Info: img/CFM_TICC.png  used on input line 86. on input line
+ 86.
+Package pdftex.def Info: Requested size: 170.09244pt x 150.90334pt on input lin
+e 86.
+<img/CFM_Kmeans.png, id=23, 658.46pt x 584.1825pt>
+File: img/CFM_Kmeans.png Graphic file (type png)
+<use img/CFM_Kmeans.png>
+Package pdftex.def Info: img/CFM_Kmeans.png  used on input line 87. on input li
+ne 87.
+Package pdftex.def Info: Requested size: 170.09244pt x 150.90334pt on input lin
+e 87.
+<img/CFM_GMM.png, id=24, 658.46pt x 584.1825pt>
+File: img/CFM_GMM.png Graphic file (type png)
+<use img/CFM_GMM.png>
+Package pdftex.def Info: img/CFM_GMM.png  used on input line 88. on input line 
+88.
+Package pdftex.def Info: Requested size: 170.09244pt x 150.90334pt on input lin
+e 88.
+ [4 <./img/True.png> <./img/TICC.png> <./img/KMeans.png> <./img/GMM.png>]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 97.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 97.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5 <./img/CFM_TICC.png> <./img/CFM_Kmeans.png> <./img/CFM_GMM.png>]
+<img/TrueGestures.png, id=39, 1175.39125pt x 320.19624pt>
+File: img/TrueGestures.png Graphic file (type png)
+<use img/TrueGestures.png>
+Package pdftex.def Info: img/TrueGestures.png  used on input line 109. on input
+ line 109.
+Package pdftex.def Info: Requested size: 170.09244pt x 46.33199pt on input line
+ 109.
+<img/TICC_gesture.png, id=40, 1175.39125pt x 320.19624pt>
+File: img/TICC_gesture.png Graphic file (type png)
+<use img/TICC_gesture.png>
+Package pdftex.def Info: img/TICC_gesture.png  used on input line 110. on input
+ line 110.
+Package pdftex.def Info: Requested size: 170.09244pt x 46.33199pt on input line
+ 110.
+<img/Kmeans_gesture.png, id=41, 1175.39125pt x 320.19624pt>
+File: img/Kmeans_gesture.png Graphic file (type png)
+<use img/Kmeans_gesture.png>
+Package pdftex.def Info: img/Kmeans_gesture.png  used on input line 111. on inp
+ut line 111.
+Package pdftex.def Info: Requested size: 170.09244pt x 46.33199pt on input line
+ 111.
+<img/GMMgesture.png, id=42, 1175.39125pt x 320.19624pt>
+File: img/GMMgesture.png Graphic file (type png)
+<use img/GMMgesture.png>
+Package pdftex.def Info: img/GMMgesture.png  used on input line 112. on input l
+ine 112.
+Package pdftex.def Info: Requested size: 170.09244pt x 46.33199pt on input line
+ 112.
+<img/NetworkStructure.png, id=43, 311.1625pt x 547.04375pt>
+File: img/NetworkStructure.png Graphic file (type png)
+<use img/NetworkStructure.png>
+Package pdftex.def Info: img/NetworkStructure.png  used on input line 124. on i
+nput line 124.
+Package pdftex.def Info: Requested size: 69.42365pt x 122.05283pt on input line
+ 124.
+
+Underfull \vbox (badness 5607) has occurred while \output is active []
+
+ [6 <./img/TrueGestures.png> <./img/TICC_gesture.png> <./img/Kmeans_gesture.png
+> <./img/GMMgesture.png>]
+<img/LSTM_Accuracy_GD.png, id=51, 614.295pt x 497.86pt>
+File: img/LSTM_Accuracy_GD.png Graphic file (type png)
+<use img/LSTM_Accuracy_GD.png>
+Package pdftex.def Info: img/LSTM_Accuracy_GD.png  used on input line 133. on i
+nput line 133.
+Package pdftex.def Info: Requested size: 156.20453pt x 126.59937pt on input lin
+e 133.
+<img/LSTM_Loss_GD.png, id=52, 614.295pt x 497.86pt>
+File: img/LSTM_Loss_GD.png Graphic file (type png)
+<use img/LSTM_Loss_GD.png>
+Package pdftex.def Info: img/LSTM_Loss_GD.png  used on input line 134. on input
+ line 134.
+Package pdftex.def Info: Requested size: 156.20453pt x 126.59937pt on input lin
+e 134.
+<img/LSTM_CFM_GD.png, id=53, 658.46pt x 584.1825pt>
+File: img/LSTM_CFM_GD.png Graphic file (type png)
+<use img/LSTM_CFM_GD.png>
+Package pdftex.def Info: img/LSTM_CFM_GD.png  used on input line 143. on input 
+line 143.
+Package pdftex.def Info: Requested size: 156.20453pt x 138.58432pt on input lin
+e 143.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7 <./img/NetworkStructure.png> <./img/LSTM_Accuracy_GD.png> <./img/LSTM_Loss_
+GD.png>]
+<img/LSTM_Accuracy_HAD.png, id=61, 614.295pt x 497.86pt>
+File: img/LSTM_Accuracy_HAD.png Graphic file (type png)
+<use img/LSTM_Accuracy_HAD.png>
+Package pdftex.def Info: img/LSTM_Accuracy_HAD.png  used on input line 154. on 
+input line 154.
+Package pdftex.def Info: Requested size: 156.20453pt x 126.59937pt on input lin
+e 154.
+<img/LSTM_Loss_HAD.png, id=62, 614.295pt x 497.86pt>
+File: img/LSTM_Loss_HAD.png Graphic file (type png)
+<use img/LSTM_Loss_HAD.png>
+Package pdftex.def Info: img/LSTM_Loss_HAD.png  used on input line 155. on inpu
+t line 155.
+Package pdftex.def Info: Requested size: 156.20453pt x 126.59937pt on input lin
+e 155.
+
+[8 <./img/LSTM_CFM_GD.png> <./img/LSTM_Accuracy_HAD.png> <./img/LSTM_Loss_HAD.p
+ng>]
+<img/50Penalty.png, id=69, 1175.39125pt x 320.19624pt>
+File: img/50Penalty.png Graphic file (type png)
+<use img/50Penalty.png>
+Package pdftex.def Info: img/50Penalty.png  used on input line 171. on input li
+ne 171.
+Package pdftex.def Info: Requested size: 173.56177pt x 47.27983pt on input line
+ 171.
+<img/150Penalty.png, id=70, 1175.39125pt x 320.19624pt>
+File: img/150Penalty.png Graphic file (type png)
+<use img/150Penalty.png>
+Package pdftex.def Info: img/150Penalty.png  used on input line 172. on input l
+ine 172.
+Package pdftex.def Info: Requested size: 173.56177pt x 47.27983pt on input line
+ 172.
+<img/300Penalty.png, id=71, 1175.39125pt x 320.19624pt>
+File: img/300Penalty.png Graphic file (type png)
+<use img/300Penalty.png>
+Package pdftex.def Info: img/300Penalty.png  used on input line 173. on input l
+ine 173.
+Package pdftex.def Info: Requested size: 173.56177pt x 47.27983pt on input line
+ 173.
+<img/600Penalty.png, id=72, 1175.39125pt x 320.19624pt>
+File: img/600Penalty.png Graphic file (type png)
+<use img/600Penalty.png>
+Package pdftex.def Info: img/600Penalty.png  used on input line 174. on input l
+ine 174.
+Package pdftex.def Info: Requested size: 173.56177pt x 47.27983pt on input line
+ 174.
+<img/lambda1+1.png, id=73, 1175.39125pt x 320.19624pt>
+File: img/lambda1+1.png Graphic file (type png)
+<use img/lambda1+1.png>
+Package pdftex.def Info: img/lambda1+1.png  used on input line 184. on input li
+ne 184.
+Package pdftex.def Info: Requested size: 173.56177pt x 47.27983pt on input line
+ 184.
+<img/lambda0+11.png, id=74, 1175.39125pt x 320.19624pt>
+File: img/lambda0+11.png Graphic file (type png)
+<use img/lambda0+11.png>
+Package pdftex.def Info: img/lambda0+11.png  used on input line 185. on input l
+ine 185.
+Package pdftex.def Info: Requested size: 173.56177pt x 47.27983pt on input line
+ 185.
+<img/lambda+011.png, id=75, 1175.39125pt x 320.19624pt>
+File: img/lambda+011.png Graphic file (type png)
+<use img/lambda+011.png>
+Package pdftex.def Info: img/lambda+011.png  used on input line 186. on input l
+ine 186.
+Package pdftex.def Info: Requested size: 173.56177pt x 47.27983pt on input line
+ 186.
+<img/lambda0+00011.png, id=76, 1175.39125pt x 320.19624pt>
+File: img/lambda0+00011.png Graphic file (type png)
+<use img/lambda0+00011.png>
+Package pdftex.def Info: img/lambda0+00011.png  used on input line 187. on inpu
+t line 187.
+Package pdftex.def Info: Requested size: 173.56177pt x 47.27983pt on input line
+ 187.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 <./img/50Penalty.png> <./img/150Penalty.png> <./img/300Penalty.png> <./img/
+600Penalty.png>]
+<img/stand.png, id=84, 260.975pt x 258.9675pt>
+File: img/stand.png Graphic file (type png)
+<use img/stand.png>
+Package pdftex.def Info: img/stand.png  used on input line 196. on input line 1
+96.
+Package pdftex.def Info: Requested size: 104.1381pt x 103.3362pt on input line 
+196.
+<img/sit.png, id=85, 260.975pt x 258.9675pt>
+File: img/sit.png Graphic file (type png)
+<use img/sit.png>
+Package pdftex.def Info: img/sit.png  used on input line 197. on input line 197
+.
+Package pdftex.def Info: Requested size: 104.1381pt x 103.3362pt on input line 
+197.
+<img/bike.png, id=86, 260.975pt x 258.9675pt>
+File: img/bike.png Graphic file (type png)
+<use img/bike.png>
+Package pdftex.def Info: img/bike.png  used on input line 198. on input line 19
+8.
+Package pdftex.def Info: Requested size: 104.1381pt x 103.3362pt on input line 
+198.
+<img/walk.png, id=87, 260.975pt x 258.9675pt>
+File: img/walk.png Graphic file (type png)
+<use img/walk.png>
+Package pdftex.def Info: img/walk.png  used on input line 199. on input line 19
+9.
+Package pdftex.def Info: Requested size: 104.1381pt x 103.3362pt on input line 
+199.
+<img/stairsup.png, id=88, 260.975pt x 258.9675pt>
+File: img/stairsup.png Graphic file (type png)
+<use img/stairsup.png>
+Package pdftex.def Info: img/stairsup.png  used on input line 200. on input lin
+e 200.
+Package pdftex.def Info: Requested size: 104.1381pt x 103.3362pt on input line 
+200.
+<img/stairsdown.png, id=89, 260.975pt x 258.9675pt>
+File: img/stairsdown.png Graphic file (type png)
+<use img/stairsdown.png>
+Package pdftex.def Info: img/stairsdown.png  used on input line 201. on input l
+ine 201.
+Package pdftex.def Info: Requested size: 104.1381pt x 103.3362pt on input line 
+201.
+ [10 <./img/lambda1+1.png> <./img/lambda0+11.png> <./img/lambda+011.png> <./img
+/lambda0+00011.png> <./img/stand.png> <./img/sit.png> <./img/bike.png> <./img/w
+alk.png> <./img/stairsup.png> <./img/stairsdown.png>]
+<img/StandL.png, id=103, 260.975pt x 258.9675pt>
+File: img/StandL.png Graphic file (type png)
+<use img/StandL.png>
+Package pdftex.def Info: img/StandL.png  used on input line 210. on input line 
+210.
+Package pdftex.def Info: Requested size: 104.1381pt x 103.3362pt on input line 
+210.
+<img/SitL.png, id=104, 260.975pt x 258.9675pt>
+File: img/SitL.png Graphic file (type png)
+<use img/SitL.png>
+Package pdftex.def Info: img/SitL.png  used on input line 211. on input line 21
+1.
+Package pdftex.def Info: Requested size: 104.1381pt x 103.3362pt on input line 
+211.
+<img/BikeL.png, id=105, 260.975pt x 258.9675pt>
+File: img/BikeL.png Graphic file (type png)
+<use img/BikeL.png>
+Package pdftex.def Info: img/BikeL.png  used on input line 212. on input line 2
+12.
+Package pdftex.def Info: Requested size: 104.1381pt x 103.3362pt on input line 
+212.
+<img/WalkL.png, id=106, 260.975pt x 258.9675pt>
+File: img/WalkL.png Graphic file (type png)
+<use img/WalkL.png>
+Package pdftex.def Info: img/WalkL.png  used on input line 213. on input line 2
+13.
+Package pdftex.def Info: Requested size: 104.1381pt x 103.3362pt on input line 
+213.
+<img/StairUpL.png, id=107, 260.975pt x 258.9675pt>
+File: img/StairUpL.png Graphic file (type png)
+<use img/StairUpL.png>
+Package pdftex.def Info: img/StairUpL.png  used on input line 214. on input lin
+e 214.
+Package pdftex.def Info: Requested size: 104.1381pt x 103.3362pt on input line 
+214.
+<img/StairDownL.png, id=108, 260.975pt x 258.9675pt>
+File: img/StairDownL.png Graphic file (type png)
+<use img/StairDownL.png>
+Package pdftex.def Info: img/StairDownL.png  used on input line 215. on input l
+ine 215.
+Package pdftex.def Info: Requested size: 104.1381pt x 103.3362pt on input line 
+215.
+<img/window5.png, id=109, 1175.39125pt x 320.19624pt>
+File: img/window5.png Graphic file (type png)
+<use img/window5.png>
+Package pdftex.def Info: img/window5.png  used on input line 226. on input line
+ 226.
+Package pdftex.def Info: Requested size: 173.56177pt x 47.27983pt on input line
+ 226.
+<img/window9.png, id=110, 1175.39125pt x 320.19624pt>
+File: img/window9.png Graphic file (type png)
+<use img/window9.png>
+Package pdftex.def Info: img/window9.png  used on input line 227. on input line
+ 227.
+Package pdftex.def Info: Requested size: 173.56177pt x 47.27983pt on input line
+ 227.
+<img/window13.png, id=111, 1175.39125pt x 320.19624pt>
+File: img/window13.png Graphic file (type png)
+<use img/window13.png>
+Package pdftex.def Info: img/window13.png  used on input line 228. on input lin
+e 228.
+Package pdftex.def Info: Requested size: 173.56177pt x 47.27983pt on input line
+ 228.
+<img/window20.png, id=112, 1175.39125pt x 320.19624pt>
+File: img/window20.png Graphic file (type png)
+<use img/window20.png>
+Package pdftex.def Info: img/window20.png  used on input line 229. on input lin
+e 229.
+Package pdftex.def Info: Requested size: 173.56177pt x 47.27983pt on input line
+ 229.
+
+Underfull \vbox (badness 2418) has occurred while \output is active []
+
+ [11 <./img/StandL.png> <./img/SitL.png> <./img/BikeL.png> <./img/WalkL.png> <.
+/img/StairUpL.png> <./img/StairDownL.png>]
+<img/PenaltyLine.png, id=122, 614.295pt x 595.22375pt>
+File: img/PenaltyLine.png Graphic file (type png)
+<use img/PenaltyLine.png>
+Package pdftex.def Info: img/PenaltyLine.png  used on input line 241. on input 
+line 241.
+Package pdftex.def Info: Requested size: 104.1381pt x 100.90514pt on input line
+ 241.
+<img/lambdaLine.png, id=123, 614.295pt x 598.235pt>
+File: img/lambdaLine.png Graphic file (type png)
+<use img/lambdaLine.png>
+Package pdftex.def Info: img/lambdaLine.png  used on input line 242. on input l
+ine 242.
+Package pdftex.def Info: Requested size: 104.1381pt x 101.41562pt on input line
+ 242.
+<img/windowLine.png, id=124, 614.295pt x 595.22375pt>
+File: img/windowLine.png Graphic file (type png)
+<use img/windowLine.png>
+Package pdftex.def Info: img/windowLine.png  used on input line 243. on input l
+ine 243.
+Package pdftex.def Info: Requested size: 104.1381pt x 100.90514pt on input line
+ 243.
+ (./Final Report.bbl
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12 <./img/window5.png> <./img/window9.png> <./img/window13.png> <./img/window
+20.png> <./img/PenaltyLine.png> <./img/lambdaLine.png> <./img/windowLine.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 11--15
+[]\OT1/cmr/m/n/9 Demetriades, P.O., Hus-sein, K.A.: Does fi-nan-cial de-vel-op-
+ment
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--15
+\OT1/cmr/m/n/9 cause eco-nomic growth? time-series ev-i-dence from 16 coun-trie
+s.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--15
+\OT1/cmr/m/n/9 Jour-nal of De-vel-op-ment Eco-nomics 51(2), 387 -- 411 (1996),
+ []
+
+
+Underfull \hbox (badness 2735) in paragraph at lines 41--47
+\OT1/cmr/m/n/9 Dey, A., Sonne, T., Jensen, M.M.: Smart de-vices are dif-fer-ent
+: As-sess-
+ []
+
+
+Underfull \hbox (badness 1852) in paragraph at lines 41--47
+\OT1/cmr/m/n/9 Pro-ceed-ings of the 13th ACM Con-fer-ence on Em-bed-ded Net-wor
+ked Sen-
+ []
+
+) [13] (./Final Report.aux) ) 
+Here is how much of TeX's memory you used:
+ 3377 strings out of 492995
+ 52710 string characters out of 6135073
+ 117114 words of memory out of 5000000
+ 6862 multiletter control sequences out of 15000+600000
+ 7289 words of font info for 26 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,8n,39p,1556b,291s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
+Output written on "Final Report.pdf" (13 pages, 718439 bytes).
+PDF statistics:
+ 160 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 221 words of extra memory for PDF output out of 10000 (max. 10000000)
+

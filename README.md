@@ -1,4 +1,5 @@
-# COMP5331 Project 
+# COMP5331 Project Knowledge Discovery in Databases 2017Fall HKUST
+### TEAM MEMBER: Wenshuo Guo, Mucong Ding, James Chueng
 
 ## Applications and Improvements of Toeplitz Inverse Covariance-Based Clustering
 
@@ -10,7 +11,6 @@
   - Presentation DDL: 21 Nov (Tue) 3pm-4:20pm	
   - PPT/Source Code Submission DDL: 21 Nov (Tue) 23:59pm
 
-### Plan
 #### Milestone 1 (Deadline: Nov 3)
   - PIC: James, Guo
   - Read TICC Source Code
